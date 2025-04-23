@@ -1,0 +1,50 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body, html { height: 100%; font-family: sans-serif; }
+#app { display: flex; height: 100%; }
+#clients {
+  width: 220px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+#clients h2 { margin-bottom: .5rem; }
+#clients ul { list-style: none; margin-top: 1rem; }
+#clients li {
+  padding: .5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#clients li.active,
+#clients li:hover { background: #34495e; }
+#clients li button {
+  background: transparent;
+  border: none;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+#detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+section { margin-bottom: 1rem; }
+#chatWindow {
+  height: 200px;
+  overflow-y: auto;
+  background: #ecf0f1;
+  padding: .5rem;
+  border: 1px solid #bdc3c7;
+  margin-bottom: .5rem;
+}
+#chatInput { width: 100%; padding: .5rem; }
+#status, #inventory, #health, #scoreboard {
+  background: #ecf0f1;
+  padding: .5rem;
+  border: 1px solid #bdc3c7;
+  margin-top: .5rem;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minebot Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside id="clients">
+      <h2>Clients</h2>
+      <form id="addBotForm">
+        <h3>Add Bot</h3>
+        <input name="id" placeholder="Bot ID" required />
+        <input name="email" placeholder="Email" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <input name="host" placeholder="Host" value="localhost" required />
+        <input name="port" placeholder="Port" value="25565" required />
+        <input name="version" placeholder="Version" value="1.20.1" required />
+        <button type="submit">Add Bot</button>
+      </form>
+      <ul id="clientList"></ul>
+    </aside>
+    <main id="detail">
+      <section id="chatSection">
+        <h2>Chat</h2>
+        <div id="chatWindow"></div>
+        <input id="chatInput" placeholder="Send message..." />
+      </section>
+      <section id="infoSection">
+        <h2>Info</h2>
+        <div id="status"></div>
+        <div id="inventory"></div>
+        <div id="health"></div>
+        <div id="scoreboard"></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

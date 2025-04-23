@@ -1,0 +1,12 @@
+{
+  "bots": [
+    {
+      "id": "MoonFlux2000_",
+      "email": "astroaltcontrol@gmail.com",
+      "password": "Oona2017",
+      "host": "donutsmp.net",
+      "port": 25565,
+      "version": "1.20.1"
+    }
+  ]
+}
